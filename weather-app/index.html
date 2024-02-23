@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="search-box">
+        <input type="text" placeholder="Search Location..." class="input-box">
+        <button><img src="./assets/magnifying-glass-solid.svg" alt="search" id="searchBtn"></button>
+      </div>
+    </div>
+
+    <div class="location-not-found">
+      <h1>Sorry, Location not found!!!</h1>
+      <img src="./assets/404.png" alt="404 Error">
+    </div>
+
+    <div class="weather-body">
+      <img src="./assets/cloud.png" alt="Weather Image" class="weather-img">
+
+      <div class="weather-box">
+        <!-- <p class="temperature">0 <sup>°C</sup></p> -->
+        <p class="temperature">0°C</p>
+        <p class="description">light rain</p>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <img src="./assets/humidity-icon.svg" alt="Humidity Image" class="humidity-icon">
+          <div class="text">
+            <span id="humidity">45%</span>
+            <p>Humidity</p>
+            <!-- Humidity -->
+          </div>
+        </div>
+
+        <div class="wind">
+          <img src="./assets/wind-icon.svg" alt="Wind Image" class="wind-icon">
+          <!-- <img src="https://cdn.hugeicons.com/icons/fast-wind-stroke-rounded.svg" alt="fast-wind" width="24" height="24" /> -->
+          <div class="text">
+            <span id="wind-speed">12Km/H</span>
+            <p>Wind Speed</p>
+            <!-- <span>Wind Speed</span> -->
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
