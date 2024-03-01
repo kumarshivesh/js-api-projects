@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter-container">
+    <h1>Currency Converter</h1>
+
+    <form action="#">
+      <div class="input-conatiner">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="number" value="1" min="1"/>
+        </div>
+
+       <div class="drop-list">
+        <div class="from-container">
+          <p>From</p>
+          <div class="select-box">
+            <img src="https://flagcdn.com/48x36/us.png" alt="">
+            <select class="fromCurrency">
+              <!-- <option value="USD">USD</option>
+              <option value="IND">IND</option> -->
+            </select>
+          </div>
+        </div>
+  
+        <div class="arrow">&#8646</div>
+  
+        <div class="to-container">
+          <p>To</p>
+          <div class="select-box">
+            <img src="https://flagcdn.com/48x36/in.png" alt="">
+            <select class="toCurrency">
+              <!-- <option value="IND">IND</option>
+              <option value="USD">USD</option> -->
+            </select>
+          </div>
+        </div>
+       </div>
+  
+        <div class="result">1 INR = 82 USD</div>
+  
+        <button type="submit">Get Exchange Rate</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
